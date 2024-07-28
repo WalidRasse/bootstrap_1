@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-jQuery</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/practice-jQuery.css">
+</head>
+<body>
+    <!-- video 2: -->
+    <!-- !!!!! My code -->
+    <!-- <div class="header">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="Home">Home</div>
+    <div class="About-Us">About Us</div>
+    <div class="Services">Services</div>
+    <div class="Solutions">Solutions</div>
+    <div class="Product">Product</div>
+    <div class="Contact-Us">Contact Us</div> -->
+
+    <!-- Elzero Code -->
+    <ul class="navbar">
+        <li>Home</li>
+        <li><a href="#" data-scroll="about-us">About Us</a></li>
+        <li><a href="#" data-scroll="services">Services</a></li>
+        <li><a href="#" data-scroll="solutions">Solutions</a></li>
+        <li><a href="#" data-scroll="products">Products</a></li>
+        <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+    </ul>
+    <!-- I add this 'bigest-father in video 18+19 for position:relative' -->
+    <div class="bigest-father">
+        <div id="about-us" class="block">
+            <h2>About Us</h2>
+            <!-- video 9 or 10 -->
+            <!-- <button class="show btn0">Show Popup</button> -->
+            <!-- video 21 22 23 24 : -->
+            <!-- my html code -->
+            <div class="father-slider">
+                <div class="big-photos">
+                    <!-- if you want to change the direction of icon change chevron-up to chavron-right or down in the class of icon ... -->
+                        <i class="fa fa-chevron-up i1" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-up i2" aria-hidden="true"></i>
+                     <!-- you can remove the comment to all imgs when you work with your code-->
+                    <!-- Dont't forget to add class="img1 active" to img1 -->
+                    <img src="imgs/01.jpg" alt="">
+                    <!-- <img src="imgs/02.jpg" class="img2" alt="">
+                    <img src="imgs/03.jpg" class="img3" alt="">
+                    <img src="imgs/04.jpg" class="img4" alt="">
+                    <img src="imgs/05.jpg" class="img5" alt=""> -->
+                </div>
+                <div class="small-photos">
+                    <!-- you can add what you want of imgs this is dynamoque with elzero code -->
+                    <!-- I don't need data-img in elzero code -->
+                    <img src="imgs/01.jpg" class="active" data-img="img1" alt="">
+                    <img src="imgs/02.jpg" data-img="img2" alt="">
+                    <img src="imgs/03.jpg" data-img="img3" alt="">
+                    <img src="imgs/04.jpg" data-img="img4" alt="">
+                    <img src="imgs/05.jpg" data-img="img5" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="services" class="block">
+            <h2>Services</h2>
+            <!-- video 29 -->
+            <!-- elzero code -->
+            <!-- <div class="our-form">
+                <form>
+                    <input type="text" placeholder="Type You Name">
+                    <input type="email" placeholder="Type Your Email">
+                    <input type="password" placeholder="Type Your Password">
+                    <textarea placeholder="Type You Message"></textarea>
+                    <input type="Submit" value="Send">
+                </form>
+            </div> -->
+            <!-- video 30 + 31 -->
+            <!-- elzero code -->
+            <div class="our-form">
+                <form>
+                    <div>
+                        <input class="detect-unicode" type="text" placeholder="Type You Name" required="required">
+                        <span class="the-message">Please Fill This Field</span>
+                        <!-- video 34 -->
+                        <!-- every keyboard has his own code and when you want -->
+                        <!-- ///////////////////// -->
+                        <div class="unicode"></div>  
+                        <!-- ///////////////////// -->
+                    </div>
+                    <div>
+                        <input class="auto-direction" type="email" placeholder="Type Your Email" required="required">
+                        <span class="the-message">Please Fill This Field</span>
+                        <!-- video 35: -->
+                        <!-- change the direction of writing inside input when you change longuage => like arabic longuage-->
+                        <!-- ///////////////////// -->
+                        <div class="american-standard"></div>  
+                        <!-- ///////////////////// -->
+                        <!-- video 36: -->
+                        <!-- ///////////////////// -->
+                        <div class="american-standard-why-200"></div>  
+                        <!-- ///////////////////// -->
+
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Type Your Password" required="required">
+                        <span class="the-message">Please Fill This Field</span>
+                    </div>
+                    <div>
+                        <textarea placeholder="Type You Message" required="required"></textarea>
+                        <span class="the-message">Please Fill This Field</span>
+                    </div>
+                    <!-- video 38: -->
+                    <!-- alkalimat almiftahiya -->
+                    <!-- my code -->
+                    <!-- ////////////////////////////////// -->
+                    <div>
+                        <input class="type-words" type="text" placeholder="Type Your Words" required="required">
+                        <span class="the-message">Please Fill This Field</span>
+                        <div class="open-words">
+                        </div>
+                    </div>
+                    <!-- ////////////////////////////////// -->
+                    <!-- video 32+33: -->
+                    <!-- learn new thing in input so I use only elzero code  -->
+                    <!-- input type file =>  you can not acces him with css -->
+                    <!-- //////////////////////////////////// -->
+                    <div>
+                        <input type="file">
+                    </div>
+                    <!-- //////////////////////////////////// -->
+                    <input type="Submit" value="Send">
+                </form>
+                <!-- video 39: -->
+                <div class="texts">
+                    <div class="p p-one">Lorem ipsum Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure ex hic dolore, doloribus fugiat distinctio aperiam natus beatae nulla recusandae sequi animi expedita quae laudantium, magnam enim eaque. Nesciunt!</div>
+                    <div class="p p-two">Lorem ipsumLorem ipsum  dolor sit amet consectetur adipisicing elit. Rerum iure ex hic dolore, doloribus fugiat distinctio aperiam natus beatae nulla recusandae sequi animi expedita quae laudantium, magnam enim eaque. Nesciunt!</div>
+                    <div class="p p-three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure ex hic dolore, doloribus fugiat distinctio aperiam natus beatae nulla recusandae sequi animi expedita quae laudantium, magnam enim eaque. Nesciunt!</div>
+                </div>
+                <!-- video 42: -->
+                <!-- the whighest thext of them take his height and give him to other texts => bach iwalo bhal bhal fdesign-->
+                <!-- my code -->
+                <!-- if you dont't add a heght to paragraph it be the some with the farther => so I add fit-content for doing the idea -->
+                <div class="heigh-text">
+                    <p class="first-text">Molestias adipisci est veritatis velit nulla. Dignissimos quis, iure iste tempore saepe beatae culpa deserunt iusto quae sed maiores molestias natus accusantium?Molestias adipisci est veritatis velit nulla. Dignissimos quis, iure iste tempore saepe beatae culpa deserunt iusto quae sed maiores molestias natus accusantium?Molestias adipisci est veritatis velit nulla. Dignissimos quis, iure iste tempore saepe beatae culpa deserunt iusto quae sed maiores molestias natus accusantium?Molestias adipisci est veritatis velit nulla. Dignissimos quis, iure iste tempore saepe beatae culpa deserunt iusto quae sed maiores molestias natus accusantium?</p>
+                    <p class="second-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque temporibus placeat iste eius aperiam autem laborum nam atque voluptatibus aliquid. SolutaLorem ipsum dolor sit amet consectetur adipisicing elit. Neque temporibus placeat iste eius aperiam autem laborum nam atque voluptatibus aliquid. Soluta quia debitis magni provident dicta minima explicabo vel at?</p>
+                    <p class="third-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis eligendi, neque fugiat, eos fuga nesciunt ducimus dolorem magni tempora, esse aut omnis molestiae quae debitis veniam magnam nam quos.</p>
+                </div>
+                <!-- video 43: -->
+                <!-- my code -->
+                <div class="z-index-divs-father">
+                    <div class="z1"></div>
+                    <div class="z2"></div>
+                    <div class="z3"></div>
+                    <div class="z4"></div>
+                    <div class="z5"></div>
+                    <div class="z6"></div>
+                    <div class="z7"></div>
+                    <div class="z8"></div>
+                    <div class="z9"></div>
+                    <div class="z10"></div>
+                    <div class="z11"></div>
+                    <div class="z12"></div>
+                </div>
+                <!-- video 44:-->
+                <!-- warning -->
+                <!-- my code -->
+                <div class="warning">
+                    <span>This Is Warning</span>
+                </div>
+                <!-- video 45 + 46: -->
+                <!-- To Do List -->
+                <!-- my code -->
+                <div class="to-do-list">
+                    <div class="discription">ToDo List</div>
+                    <div class="adding-place">
+                    </div>
+                    <form class="add-task" method="post">
+                        <input class="task-input" type="text" placeholder="Add New Task">
+                    </form>
+                </div>
+                <!-- video 47: -->
+                <!-- my code: -->                    
+                <div class="typing-denamique-text" data-text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque asperiores veniam illo quis non cupiditate minus animi ipsam eos quam. Itaque vero quas minima distinctio sequi, mollitia assumenda? Quasi, totam!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque asperiores veniam illo quis non cupiditate minus animi ipsam eos quam. Itaque vero quas minima distinctio sequi, mollitia assumenda? Quasi, totam!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque asperiores veniam illo quis non cupiditate minus animi ipsam eos quam. Itaque vero quas minima distinctio sequi, mollitia assumenda? Quasi, totam!"></div>
+                <!-- video 48: -->
+                <!-- my code:  -->
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Date One</td>
+                        <td>10 Item</td>
+                        <td class="price">100</td>
+                    </tr>
+                    <tr>
+                        <td>Date Two</td>
+                        <td>5 Item</td>
+                        <td class="price">80</td>
+                    </tr>
+                    <tr>
+                        <td>Date Three</td>
+                        <td>1 Item</td>
+                        <td class="price">20</td>
+                    </tr>
+                    <tr>
+                        <td>Date Four</td>
+                        <td>20 Item</td>
+                        <td class="price">200</td>
+                    </tr>
+                    <tr>
+                        <td>Date Five</td>
+                        <td>2 Item</td>
+                        <td class="price">28</td>
+                    </tr>
+                    <tr class="compte">
+                        <td class="end" colspan="2">Total:</td>
+                        <td class="total"></td>
+                    </tr>
+                </table>
+                <!-- video 49: -->
+                <!-- my code -->
+                <div class="Today-Notes">
+                    <div class="text">Today Notes</div>
+                    <div class="father__">
+                        <div class="discription active1 active2 non-active">This is text number One to test</div>
+                        <div class="discription">This is text number Two to test</div>
+                        <div class="discription">This is text number Three to test</div>
+                        <div class="discription">This is text number Four to test</div>
+                        <div class="discription">This is text number Five to test</div>
+                    </div>
+                </div>
+                <!-- video 50 + 51 : -->
+                <!-- my code -->
+                <div class="smart-view">Smart View</div>
+                <div class="change-content-parent">
+                    <div class="control-button">
+                        <div class="button-class" data-number="One">One</div>
+                        <div class="button-class" data-number="Two">Two</div>
+                        <div class="button-class" data-number="Three">Three</div>
+                        <div class="button-class" data-number="Four">Four</div>
+                        <div class="button-class" data-number="Five">Five</div>
+                    </div>
+                    <div class="the-content">
+                        <div class="One">This is content number One</div>
+                        <div class="Two">This is content number Two</div>
+                        <div class="Three">This is content number Three</div>
+                        <div class="Four">This is content number Four</div>
+                        <div class="Five">This is content number Five</div>
+                    </div>
+                </div>
+                <!-- video 52 + 53 : -->
+                <!-- elzero code -->
+                <div class="container">
+                    <form action="">
+                        <input 
+                        type="email"
+                        class="email-suggest"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Type Your Email"/>
+                        <!-- just for traying the style -->
+                        <!--<ul class="suggest-box">
+                            <li>@Gmail</li>
+                            <li>@Yahoo</li>
+                            <li>@Hotmail</li>
+                            <li>@Outlook</li>
+                        </ul>
+                         -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="solutions" class="block"><h2>Solutions</h2></div>
+        <div id="products" class="block"><h2>Products</h2></div>
+        <div id="contact-us" class="block"><h2>Contact Us</h2></div>
+        <!-- video 9 + 10 : -->
+        <!-- <div class="father-pop-up">
+            <div class="pop-up">
+                <h4>This is Our Popup</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet 
+                    consectetur adipisicing elit. Voluptates voluptas
+                    reiciendis doloribus quam repellendus animi, 
+                    natus odio eum illo maxime necessitatibus
+                </p>
+                <button class="close">close</button>
+            </div>    
+        </div> -->
+    
+        <!-- video 11: -->
+        <!-- if you have so many pop-up and button   -->
+        <button class="show btn1">Show 1st Popup</button>
+        <button class="show btn2">Show 2nd Popup</button>
+        <div class="father-pop-up first-father-pop-up">
+            <div class="pop-up">
+                <h4>This is Our 1st Popup</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet 
+                    consectetur adipisicing elit. Voluptates voluptas
+                    reiciendis doloribus quam repellendus animi, 
+                    natus odio eum illo maxime necessitatibus
+                </p>
+                <button class="close">close</button>
+            </div>    
+        </div>
+    
+        <div class="father-pop-up second-father-pop-up">
+            <div class="pop-up">
+                <h4>This is Our 2nd Popup</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet 
+                    consectetur adipisicing elit. Voluptates voluptas
+                    reiciendis doloribus quam repellendus animi, 
+                    natus odio eum illo maxime necessitatibus
+                </p>
+                <button class="close">close</button>
+            </div>    
+        </div>
+        <!-- video 12 +13: -->
+        <button class="download">From Top<span></span></button>
+        <button class="download_">From Left<span></span></button>
+        <!-- video 14: -->
+        <button class="download__">Border From Left<span></span></button>
+        <!-- video 15: -->
+        <button class="download___">Border From Top<span></span></button>
+        <!-- video 40: -->
+        <!-- my code -->
+        <div class="border-for-translate">
+            <button class="download1 btn1_">Bounce</button>
+            <button class="download1 btn2_">Bounce1</button>
+        </div>
+        <!-- video 16+17: -->
+        <!-- my code -->
+        <div class="father n1">
+            <span data-porcent="45"></span>
+        </div>
+        <div class="father n2">
+            <span data-porcent="25"></span>
+        </div>
+        <div class="father n3">
+            <span data-porcent="60"></span>
+        </div>
+        <div class="father n4">
+            <span data-porcent="80"></span>
+        </div>
+    </div>        
+    <!-- video 7: -->
+    <!-- //////////////////////////////////////////////////// -->
+    <a class="scroll-to-top" href="#">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+    <!-- //////////////////////////////////////////////////// -->
+    <!-- video 18 + 19 : -->
+    <!-- my code -->
+    <div class="setting-container">
+        <div class="icon-father">
+            <i class="fa-sharp fa-solid fa-gear"></i>
+        </div>
+        <h4>Change Colors</h4>
+        <div class="colors">
+            <span class="color-nb-1" data-color="#3498db"></span>
+            <span class="color-nb-2" data-color="#e74c3c"></span>
+            <span class="color-nb-3" data-color="#16a085"></span>
+            <span class="color-nb-4" data-color="#8e44ad"></span>
+        </div>
+        <h4>Import Links</h4>
+        <p>Testing Links</p>
+    </div>
+    <!-- video 25: -->
+    <div class="father-of-produce">
+        <div class="product">
+            <h3>Product One</h3>
+            <p>25/4/2017</p>
+            <img src="imgs/01.jpg" alt="">
+            <div class="father-for-toggle">
+                <div class="icon_">
+                    <!-- <i class="fa-sharp fa-solid fa-minus"></i> -->
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                </div>
+                <div class="description">This is text description</div>
+            </div>
+        </div>
+        <div class="product">
+            <h3>Product One</h3>
+            <p>25/4/2017</p>
+            <img src="imgs/01.jpg" alt="">
+            <div class="father-for-toggle">
+                <div class="icon_">
+                    <!-- <i class="fa-sharp fa-solid fa-minus"></i> -->
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                </div>
+                <div class="description">This is text description</div>
+            </div>
+        </div>
+    </div>
+    <!-- video 26+27 : -->
+    <!-- my code -->
+    <!-- <div class="chose-container">
+            <i class="fa fa-list fa-fw fa-2x i_1"></i>
+            <i class="fa fa-th-large fa-fw fa-2x i_2 active"></i>
+        <div class="father-of-produce">
+            <div class="product">
+                <h3>Product One</h3>
+                <p>25/4/2017</p>
+                <div class="img_">100-100</div>
+                <div class="father-for-toggle">
+                    <div class="icon_">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </div>
+                    <div class="description">This is text description</div>
+                </div>
+            </div>
+            <div class="product">
+                <h3>Product One</h3>
+                <p>25/4/2017</p>
+                <div class="img_">100-100</div>
+                <div class="father-for-toggle">
+                    <div class="icon_">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </div>
+                    <div class="description">This is text description</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-product hidden">
+            <div class="product">
+                <div class="img_">100-100</div>
+                <div class="content-of-product">
+                    <h3>Product One</h3>
+                    <p>25/4/2017</p>
+                    <div class="description">This is text description</div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_">100-100</div>
+                <div class="content-of-product">
+                    <h3>Product One</h3>
+                    <p>25/4/2017</p>
+                    <div class="description">This is text description</div>
+                </div>
+            </div>
+        </div>
+    </div>     -->
+    <!-- elzero Idea -->
+    <div class="chose-container">
+        <div class="view-option">
+            <i class="fa fa-list fa-fw fa-2x i_1" data-class="container-product1"></i>
+            <i class="fa fa-th-large fa-fw fa-2x i_2 active" data-class="father-of-produce1"></i>
+        </div>
+        <div class="father-of-produce1 item">
+            <div class="product">
+                <h3>Product One</h3>
+                <p>25/4/2017</p>
+                <div class="img_">100-100</div>
+                <div class="father-for-toggle">
+                    <div class="forPorpes">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </div>
+                    <div class="description">This is text description</div>
+                </div>
+            </div>
+            <div class="product">
+                <h3>Product One</h3>
+                <p>25/4/2017</p>
+                <div class="img_">100-100</div>
+                <div class="father-for-toggle">
+                    <div class="forPorpes">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </div>
+                    <div class="description">This is text description</div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- video 28: -->
+    <!-- my code -->
+    <div class="message-error">
+        This is error message this is error message
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/practice.js"></script>
+    
+</body>
+</html>
